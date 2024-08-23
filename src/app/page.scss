@@ -1,0 +1,5 @@
+.ContainerPage {
+    @media screen and (min-width: 100rem) {
+        margin-inline: calc(var(--base-size-112) + 5vw);
+    }
+}

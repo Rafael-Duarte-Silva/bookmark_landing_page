@@ -1,0 +1,140 @@
+@import "@/styles/tools";
+
+.Header {
+    padding-inline: var(--spacing-page);
+}
+
+.Header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    block-size: clamp(5.625rem, 4.708rem + 2.546vw, 7rem);
+}
+
+.Header-logo {
+    @include image(var(--base-size-144));
+
+    @media screen and (max-width: 48rem) {
+        inline-size: var(--base-size-128);
+    }
+
+    @media screen and (max-width: 36rem) {
+        inline-size: var(--base-size-144);
+    }
+
+    &.is-Header-logo-invisible {
+        @media screen and (max-width: 36rem) {
+            visibility: hidden;
+        }
+    }
+}
+
+.Header-list {
+    display: flex;
+    align-items: center;
+    column-gap: var(--base-size-48);
+
+    @media screen and (max-width: 48rem) {
+        column-gap: var(--base-size-24);
+    }
+
+    @media screen and (max-width: 36rem) {
+        flex-direction: column;
+
+        margin-block-start: var(--base-size-44);
+    }
+}
+
+.Header-item {
+    @media screen and (max-width: 36rem) {
+        inline-size: 100%;
+
+        text-align: center;
+
+        padding-block: var(--base-size-24);
+
+        border-block-start: var(--borderWidth-md) solid
+            hsla(229, 17%, 36%, 0.85);
+    }
+}
+
+.Header-link.Link--fourth {
+    @media screen and (max-width: 36rem) {
+        font-size: var(--base-size-24);
+        color: var(--color-zero);
+    }
+}
+
+.Header-linkLogin.Link--second {
+    @media screen and (max-width: 36rem) {
+        inline-size: initial;
+        block-size: var(--base-size-44);
+
+        font-size: var(--base-size-22);
+        color: var(--color-zero);
+
+        background-color: transparent;
+
+        border: var(--borderWidth-md) solid var(--color-zero);
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.Header-backgroundMobile {
+    @media screen and (max-width: 36rem) {
+        z-index: 1;
+
+        position: fixed;
+        inset-inline-start: 0;
+        inset-block-start: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        inline-size: 100vw;
+        block-size: 100dvh;
+
+        padding-inline: var(--base-size-36);
+        padding-block: var(--base-size-40) var(--base-size-48);
+
+        background-color: hsla(229, 31%, 21%, 0.9);
+
+        &.is-Header-backgroundMobile-hidden {
+            display: none;
+        }
+    }
+}
+
+.Header-containerMobile-header {
+    display: none;
+
+    @media screen and (max-width: 36rem) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.Header-containerMobile-footer {
+    display: none;
+
+    @media screen and (max-width: 36rem) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: var(--base-size-40);
+    }
+}
+
+.Header-buttonHamburger {
+    display: none;
+
+    @media screen and (max-width: 36rem) {
+        display: block;
+    }
+}

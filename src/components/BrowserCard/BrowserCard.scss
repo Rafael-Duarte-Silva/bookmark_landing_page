@@ -1,0 +1,59 @@
+.BrowserCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-zero);
+
+    border-radius: var(--borderRadius-xl);
+
+    -webkit-box-shadow: var(--boxShadow-sm);
+    -moz-box-shadow: var(--boxShadow-sm);
+    box-shadow: var(--boxShadow-sm);
+}
+
+.BrowserCard-logo {
+    inline-size: 100%;
+    block-size: var(--base-size-112);
+
+    @media screen and (max-width: 48rem) {
+        block-size: 5.5rem;
+    }
+}
+
+.BrowserCard-title.Title--third {
+    margin-block-start: var(--base-size-36);
+
+    @media screen and (max-width: 48rem) {
+        margin-block-start: var(--base-size-32);
+    }
+}
+
+.BrowserCard-text {
+    font-size: var(--size-sm);
+    font-weight: 400;
+    color: var(--color-third);
+
+    margin-block-start: var(--base-size-20);
+
+    @media screen and (max-width: 48rem) {
+        margin-block-start: var(--base-size-16);
+    }
+}
+
+.BrowserCard-dots {
+    inline-size: 100%;
+    block-size: var(--base-size-4);
+
+    margin-block-start: var(--base-size-36);
+}
+
+.BrowserCard-button.Button--primary {
+    inline-size: 90%;
+
+    margin-block: var(--base-size-20) var(--base-size-24);
+
+    @media screen and (max-width: 48rem) {
+        margin-block-end: var(--base-size-20);
+    }
+}

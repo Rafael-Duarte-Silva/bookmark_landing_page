@@ -1,24 +1,41 @@
 {
-  "name": "bookmark_landing_page",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
-  }
+    "name": "bookmark_landing_page",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@hookform/resolvers": "^3.9.0",
+        "class-variance-authority": "^0.7.0",
+        "next": "14.2.5",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-hook-form": "^7.52.2",
+        "sass": "^1.77.8",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.9.0",
+        "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^8.57.0",
+        "eslint-config-next": "14.2.5",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-react": "^7.35.0",
+        "globals": "^15.9.0",
+        "postcss": "^8.4.41",
+        "prettier": "^3.3.3",
+        "prettier-plugin-css-order": "^2.1.2",
+        "prettier-plugin-tailwindcss": "^0.6.6",
+        "tailwindcss": "^3.4.10",
+        "typescript": "^5",
+        "typescript-eslint": "^8.2.0"
+    }
 }

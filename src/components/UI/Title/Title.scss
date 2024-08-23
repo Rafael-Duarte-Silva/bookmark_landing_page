@@ -1,0 +1,19 @@
+.Title {
+    font-size: var(--size-xl);
+    font-weight: 500;
+    color: var(--color-fourth);
+
+    &--primary {
+        font-size: var(--size-xxl);
+    }
+    &--second {
+        font-size: var(--size-xl);
+    }
+    &--third {
+        font-size: var(--size-md);
+    }
+    &--secondTextCenter {
+        font-size: var(--size-xl);
+        text-align: center;
+    }
+}

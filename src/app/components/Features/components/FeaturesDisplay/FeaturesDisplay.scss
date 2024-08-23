@@ -1,0 +1,119 @@
+@import "@/styles/tools";
+
+.Features-containerFeatures {
+    display: flex;
+    align-items: center;
+    column-gap: var(--base-size-128);
+
+    padding-inline-end: var(--spacing-page);
+
+    margin-block-start: var(--base-size-64);
+
+    @media screen and (max-width: 62rem) {
+        column-gap: var(--base-size-64);
+    }
+
+    @media screen and (max-width: 48rem) {
+        flex-direction: column;
+        row-gap: var(--base-size-80);
+
+        padding-inline-end: 0;
+    }
+
+    @media screen and (max-width: 36rem) {
+        row-gap: var(--base-size-64);
+    }
+}
+
+.Features-containerIllustration {
+    display: flex;
+    justify-content: flex-end;
+
+    inline-size: 60%;
+
+    padding-block-end: var(--base-size-80);
+
+    background-image: url("../../../../../../public/images/bg-entryReverse.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: min(70%, 30rem) auto;
+
+    @media screen and (max-width: 62rem) {
+        inline-size: 50%;
+
+        padding-block-end: var(--base-size-64);
+
+        background-size: 80% auto;
+    }
+
+    @media screen and (max-width: 48rem) {
+        justify-content: center;
+
+        inline-size: 100%;
+
+        padding-inline: var(--spacing-page);
+        padding-block-end: 8%;
+
+        background-size: 55% auto;
+    }
+
+    @media screen and (max-width: 36rem) {
+        background-size: 80% auto;
+    }
+}
+
+.Features-illustration {
+    @include image(75%);
+    max-inline-size: 33.5rem;
+
+    @media screen and (max-width: 62rem) {
+        inline-size: 80%;
+    }
+
+    @media screen and (max-width: 48rem) {
+        inline-size: 70%;
+    }
+
+    @media screen and (max-width: 36rem) {
+        inline-size: 100%;
+    }
+}
+
+.Features-ContainerText {
+    inline-size: 35%;
+
+    @media screen and (max-width: 62rem) {
+        inline-size: 50%;
+    }
+
+    @media screen and (max-width: 48rem) {
+        inline-size: 80%;
+
+        @include centerContent;
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-inline: var(--spacing-page);
+    }
+
+    @media screen and (max-width: 36rem) {
+        inline-size: 100%;
+    }
+}
+
+.Features-ContainerText-text.Typography {
+    margin-block-start: var(--base-size-36);
+
+    @media screen and (max-width: 62rem) {
+        margin-block-start: var(--base-size-20);
+    }
+}
+
+.Features-link.Link--primary {
+    margin-block-start: var(--base-size-36);
+
+    @media screen and (max-width: 62rem) {
+        margin-block-start: var(--base-size-32);
+    }
+}

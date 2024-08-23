@@ -1,0 +1,68 @@
+.Button {
+    font-size: var(--size-xs);
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-zero);
+
+    border-radius: var(--borderRadius-md);
+
+    -webkit-box-shadow: var(--boxShadow-sm);
+    -moz-box-shadow: var(--boxShadow-sm);
+    box-shadow: var(--boxShadow-sm);
+
+    transition-duration: 0.2s;
+
+    &--primary {
+        background-color: var(--color-primary);
+
+        &:hover {
+            color: var(--color-primary);
+
+            background-color: var(--color-zero);
+
+            border: var(--borderWidth-md) solid var(--color-primary);
+        }
+    }
+    &--second {
+        font-weight: 400;
+
+        background-color: var(--color-second);
+
+        &:hover {
+            color: var(--color-second);
+
+            background-color: var(--color-zero);
+
+            border: var(--borderWidth-md) solid var(--color-second);
+        }
+    }
+
+    &--sm {
+        inline-size: var(--base-size-128);
+        block-size: var(--base-size-48);
+
+        @media screen and (max-width: 48rem) {
+            inline-size: var(--base-size-112);
+            block-size: var(--base-size-44);
+        }
+
+        @media screen and (max-width: 36rem) {
+            inline-size: initial;
+            block-size: var(--base-size-40);
+        }
+    }
+    &--md {
+        inline-size: var(--base-size-240);
+        block-size: var(--base-size-48);
+
+        @media screen and (max-inline-size: 48rem) {
+            inline-size: var(--base-size-224);
+            block-size: var(--base-size-44);
+        }
+
+        @media screen and (max-inline-size: 36rem) {
+            inline-size: var(--base-size-208);
+            block-size: var(--base-size-40);
+        }
+    }
+}

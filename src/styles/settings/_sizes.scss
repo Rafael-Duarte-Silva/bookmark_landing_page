@@ -1,0 +1,7 @@
+:root {
+    --size-xs: clamp(0.875rem, 0.792rem + 0.231vw, 1rem);
+    --size-sm: clamp(1rem, 0.917rem + 0.231vw, 1.125rem);
+    --size-md: clamp(1.125rem, 0.875rem + 0.694vw, 1.5rem);
+    --size-xl: clamp(1.375rem, 1.042rem + 0.926vw, 1.875rem);
+    --size-xxl: clamp(1.875rem, 1.375rem + 1.389vw, 2.625rem);
+}

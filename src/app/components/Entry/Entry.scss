@@ -1,0 +1,117 @@
+@import "@/styles/tools";
+
+.Entry {
+    display: flex;
+    align-items: center;
+    column-gap: var(--base-size-80);
+
+    margin-inline-start: var(--spacing-page);
+    margin-block-start: var(--base-size-48);
+
+    @media screen and (max-width: 62rem) {
+        flex-direction: column-reverse;
+        row-gap: var(--base-size-56);
+
+        margin-inline-start: 0;
+        margin-block-start: var(--base-size-20);
+    }
+
+    @media screen and (max-width: 48rem) {
+        row-gap: var(--base-size-48);
+    }
+}
+
+.Entry-containerText {
+    inline-size: 40%;
+
+    @media screen and (max-width: 62rem) {
+        inline-size: 33.25rem;
+    }
+
+    @media screen and (max-width: 48rem) {
+        inline-size: 70%;
+    }
+
+    @media screen and (max-width: 36rem) {
+        inline-size: 80%;
+    }
+}
+
+.Entry-title.Title--primary {
+    @media screen and (max-width: 62rem) {
+        text-align: center;
+    }
+}
+
+.Entry-text.Typography {
+    margin-block-start: var(--base-size-28);
+
+    @media screen and (max-width: 62rem) {
+        text-align: center;
+
+        margin-block-start: var(--base-size-32);
+    }
+}
+
+.Entry-list {
+    display: flex;
+    column-gap: var(--base-size-16);
+
+    margin-block-start: var(--base-size-36);
+
+    @media screen and (max-width: 62rem) {
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 36rem) {
+        flex-wrap: wrap;
+    }
+}
+
+.Entry-containerIllustration {
+    inline-size: 60%;
+
+    padding-inline-end: calc(var(--spacing-page) / 2.7);
+
+    background-image: url("../../../../public/images/bg-entry.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: min(75%, 32.5rem) auto;
+
+    @media screen and (max-width: 62rem) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        inline-size: 100%;
+
+        padding-inline-end: 0;
+
+        background-size: 45% auto;
+    }
+
+    @media screen and (max-width: 48rem) {
+        background-size: 55% auto;
+    }
+
+    @media screen and (max-width: 36rem) {
+        background-size: 70% auto;
+    }
+}
+
+.Entry-illustration {
+    @include image(100%);
+    max-inline-size: 41.0625rem;
+
+    @media screen and (max-width: 62rem) {
+        inline-size: 55%;
+    }
+
+    @media screen and (max-width: 48rem) {
+        inline-size: 70%;
+    }
+
+    @media screen and (max-width: 36rem) {
+        inline-size: 90%;
+    }
+}

@@ -1,0 +1,33 @@
+.Features-containerList {
+    align-self: center;
+
+    margin-block-start: var(--base-size-80);
+
+    @media screen and (max-width: 48rem) {
+        align-self: initial;
+
+        margin-block-start: var(--base-size-36);
+    }
+}
+
+.Features-list {
+    display: flex;
+
+    padding-inline: var(--base-size-40);
+
+    @media screen and (max-width: 48rem) {
+        flex-direction: column;
+
+        padding-inline: 0;
+    }
+}
+
+.Features-separator {
+    margin-block-start: var(--base-size-32);
+
+    border: var(--borderWidth-sm) solid hsl(240, 19%, 90%);
+
+    @media screen and (max-width: 48rem) {
+        margin-block-start: 0;
+    }
+}

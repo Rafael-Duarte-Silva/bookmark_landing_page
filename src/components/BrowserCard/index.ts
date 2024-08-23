@@ -1,0 +1,1 @@
+export { BrowserCard } from "./BrowserCard";

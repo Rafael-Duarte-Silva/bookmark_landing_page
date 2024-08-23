@@ -1,0 +1,24 @@
+.Features {
+    margin-block-start: var(--base-size-96);
+
+    @media screen and (max-width: 48rem) {
+        margin-block-start: var(--base-size-128);
+    }
+}
+
+.Features-Header {
+    display: flex;
+    flex-direction: column;
+
+    padding-inline: var(--spacing-page);
+}
+
+.Features-text.Typography--textCenter {
+    align-self: center;
+
+    margin-block-start: var(--base-size-36);
+
+    @media screen and (max-width: 48rem) {
+        margin-block-start: var(--base-size-20);
+    }
+}

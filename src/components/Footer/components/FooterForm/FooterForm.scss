@@ -1,0 +1,99 @@
+@import "@/styles/tools";
+
+.Footer-form {
+    display: flex;
+    column-gap: var(--base-size-16);
+
+    margin-block-start: var(--base-size-36);
+
+    @media screen and (max-width: 36rem) {
+        flex-direction: column;
+        row-gap: var(--base-size-14);
+
+        margin-block-start: var(--base-size-28);
+    }
+}
+
+.Footer-label {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: var(--base-size-16);
+
+    inline-size: 18.75rem;
+    block-size: var(--base-size-48);
+
+    padding-inline: var(--base-size-20) var(--base-size-16);
+
+    background-color: var(--color-zero);
+
+    border-radius: var(--borderRadius-md);
+
+    @media screen and (max-width: 48rem) {
+        block-size: var(--base-size-44);
+    }
+
+    @media screen and (max-width: 36rem) {
+        inline-size: initial;
+        block-size: var(--base-size-40);
+    }
+
+    &.is-Footer-label-invalid {
+        border: var(--color-second) solid var(--borderWidth-md);
+        border-radius: 0;
+        border-start-start-radius: var(--borderRadius-md);
+        border-start-end-radius: var(--borderRadius-md);
+
+        @media screen and (max-width: 36rem) {
+            margin-block-end: var(--base-size-16);
+        }
+    }
+}
+
+.Footer-input {
+    inline-size: 90%;
+    block-size: 100%;
+
+    font-size: var(--size-xs);
+    font-weight: 400;
+    color: var(--color-fourth);
+
+    border: 0;
+
+    &::placeholder {
+        color: var(--color-thirdgrayishBlue);
+    }
+}
+
+.Footer-iconError {
+    @include image(20px);
+}
+
+.Footer-errorMessage {
+    position: absolute;
+    inset-inline-start: calc(0rem - var(--borderWidth-md));
+    inset-block-start: 100%;
+
+    display: flex;
+    align-items: center;
+
+    inline-size: calc(100% + var(--borderWidth-md) * 2);
+    block-size: 60%;
+
+    font-size: var(--size-xs);
+    font-weight: 400;
+    color: var(--color-zero);
+
+    padding-inline: var(--base-size-14);
+
+    background-color: var(--color-second);
+
+    border-end-start-radius: var(--borderRadius-md);
+    border-end-end-radius: var(--borderRadius-md);
+
+    @media screen and (max-width: 36rem) {
+        block-size: 75%;
+    }
+}
