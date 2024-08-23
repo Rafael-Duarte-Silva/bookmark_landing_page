@@ -1,4 +1,5 @@
 @import "@/styles/tools";
+@import "@/styles/settings/breakpoint";
 
 .Features-containerFeatures {
     display: flex;
@@ -9,18 +10,18 @@
 
     margin-block-start: var(--base-size-64);
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         column-gap: var(--base-size-64);
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         flex-direction: column;
         row-gap: var(--base-size-80);
 
         padding-inline-end: 0;
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         row-gap: var(--base-size-64);
     }
 }
@@ -38,7 +39,7 @@
     background-position: left bottom;
     background-size: min(70%, 30rem) auto;
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         inline-size: 50%;
 
         padding-block-end: var(--base-size-64);
@@ -46,7 +47,7 @@
         background-size: 80% auto;
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         justify-content: center;
 
         inline-size: 100%;
@@ -57,7 +58,7 @@
         background-size: 55% auto;
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         background-size: 80% auto;
     }
 }
@@ -66,15 +67,15 @@
     @include image(75%);
     max-inline-size: 33.5rem;
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         inline-size: 80%;
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         inline-size: 70%;
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: 100%;
     }
 }
@@ -82,11 +83,11 @@
 .Features-ContainerText {
     inline-size: 35%;
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         inline-size: 50%;
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         inline-size: 80%;
 
         @include centerContent;
@@ -97,7 +98,7 @@
         padding-inline: var(--spacing-page);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: 100%;
     }
 }
@@ -105,7 +106,7 @@
 .Features-ContainerText-text.Typography {
     margin-block-start: var(--base-size-36);
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         margin-block-start: var(--base-size-20);
     }
 }
@@ -113,7 +114,7 @@
 .Features-link.Link--primary {
     margin-block-start: var(--base-size-36);
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         margin-block-start: var(--base-size-32);
     }
 }

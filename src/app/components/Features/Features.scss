@@ -1,7 +1,9 @@
+@import "@/styles/settings/breakpoint";
+
 .Features {
     margin-block-start: var(--base-size-96);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         margin-block-start: var(--base-size-128);
     }
 }
@@ -18,7 +20,7 @@
 
     margin-block-start: var(--base-size-36);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         margin-block-start: var(--base-size-20);
     }
 }

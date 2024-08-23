@@ -1,4 +1,5 @@
 @import "@/styles/tools";
+@import "@/styles/settings/breakpoint";
 
 .Footer-contactUs {
     display: flex;
@@ -9,7 +10,7 @@
 
     background-color: var(--color-primary);
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         align-items: initial;
 
         padding-inline: var(--spacing-page);
@@ -24,7 +25,7 @@
     text-transform: uppercase;
     color: var(--color-zero);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         text-align: center;
     }
 }
@@ -39,11 +40,11 @@
 
     margin-block-start: var(--base-size-44);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         margin-block-start: var(--base-size-16);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: initial;
     }
 }
@@ -59,7 +60,7 @@
 
     background-color: var(--color-fourth);
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         flex-direction: column;
         row-gap: var(--base-size-44);
 
@@ -74,11 +75,11 @@
     align-items: center;
     column-gap: var(--base-size-64);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         column-gap: var(--base-size-36);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         flex-direction: column;
         row-gap: var(--base-size-36);
 
@@ -89,11 +90,11 @@
 .Footer-logo {
     @include image(var(--base-size-144));
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         inline-size: var(--base-size-128);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: var(--base-size-144);
     }
 }
@@ -102,11 +103,11 @@
     display: flex;
     column-gap: var(--base-size-48);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         column-gap: var(--base-size-24);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         flex-direction: column;
         align-items: center;
         row-gap: var(--base-size-32);
@@ -124,7 +125,7 @@
     align-items: center;
     column-gap: var(--base-size-40);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         column-gap: var(--base-size-36);
     }
 }

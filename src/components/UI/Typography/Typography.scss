@@ -1,3 +1,5 @@
+@import "@/styles/settings/breakpoint";
+
 .Typography {
     font-size: var(--size-sm);
     font-weight: 400;
@@ -14,21 +16,21 @@
     &--sm {
         inline-size: 30.875rem;
 
-        @media screen and (max-width: 36rem) {
+        @media screen and (max-width: $breakpoint-sm) {
             inline-size: initial;
         }
     }
     &--md {
         inline-size: 33.25rem;
 
-        @media screen and (max-width: 36rem) {
+        @media screen and (max-width: $breakpoint-sm) {
             inline-size: initial;
         }
     }
     &--lg {
         inline-size: 33.5rem;
 
-        @media screen and (max-width: 36rem) {
+        @media screen and (max-width: $breakpoint-sm) {
             inline-size: initial;
         }
     }

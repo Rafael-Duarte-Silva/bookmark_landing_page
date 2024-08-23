@@ -1,9 +1,11 @@
+@import "@/styles/settings/breakpoint";
+
 .Features-containerList {
     align-self: center;
 
     margin-block-start: var(--base-size-80);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         align-self: initial;
 
         margin-block-start: var(--base-size-36);
@@ -15,7 +17,7 @@
 
     padding-inline: var(--base-size-40);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         flex-direction: column;
 
         padding-inline: 0;
@@ -27,7 +29,7 @@
 
     border: var(--borderWidth-sm) solid hsl(240, 19%, 90%);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         margin-block-start: 0;
     }
 }

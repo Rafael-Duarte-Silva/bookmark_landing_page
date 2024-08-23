@@ -1,4 +1,5 @@
 @import "@/styles/tools";
+@import "@/styles/settings/breakpoint";
 
 .Entry {
     display: flex;
@@ -8,7 +9,7 @@
     margin-inline-start: var(--spacing-page);
     margin-block-start: var(--base-size-48);
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         flex-direction: column-reverse;
         row-gap: var(--base-size-56);
 
@@ -16,7 +17,7 @@
         margin-block-start: var(--base-size-20);
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         row-gap: var(--base-size-48);
     }
 }
@@ -24,21 +25,21 @@
 .Entry-containerText {
     inline-size: 40%;
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         inline-size: 33.25rem;
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         inline-size: 70%;
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: 80%;
     }
 }
 
 .Entry-title.Title--primary {
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         text-align: center;
     }
 }
@@ -46,7 +47,7 @@
 .Entry-text.Typography {
     margin-block-start: var(--base-size-28);
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         text-align: center;
 
         margin-block-start: var(--base-size-32);
@@ -59,11 +60,11 @@
 
     margin-block-start: var(--base-size-36);
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         justify-content: center;
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         flex-wrap: wrap;
     }
 }
@@ -78,7 +79,7 @@
     background-position: right bottom;
     background-size: min(75%, 32.5rem) auto;
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -90,11 +91,11 @@
         background-size: 45% auto;
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         background-size: 55% auto;
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         background-size: 70% auto;
     }
 }
@@ -103,15 +104,15 @@
     @include image(100%);
     max-inline-size: 41.0625rem;
 
-    @media screen and (max-width: 62rem) {
+    @media screen and (max-width: $breakpoint-lg) {
         inline-size: 55%;
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         inline-size: 70%;
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: 90%;
     }
 }

@@ -1,4 +1,5 @@
 @import "@/styles/tools";
+@import "@/styles/settings/breakpoint";
 
 .Footer-form {
     display: flex;
@@ -6,7 +7,7 @@
 
     margin-block-start: var(--base-size-36);
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         flex-direction: column;
         row-gap: var(--base-size-14);
 
@@ -31,11 +32,11 @@
 
     border-radius: var(--borderRadius-md);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         block-size: var(--base-size-44);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: initial;
         block-size: var(--base-size-40);
     }
@@ -46,7 +47,7 @@
         border-start-start-radius: var(--borderRadius-md);
         border-start-end-radius: var(--borderRadius-md);
 
-        @media screen and (max-width: 36rem) {
+        @media screen and (max-width: $breakpoint-sm) {
             margin-block-end: var(--base-size-16);
         }
     }
@@ -93,7 +94,7 @@
     border-end-start-radius: var(--borderRadius-md);
     border-end-end-radius: var(--borderRadius-md);
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         block-size: 75%;
     }
 }

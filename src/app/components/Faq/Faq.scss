@@ -1,3 +1,5 @@
+@import "@/styles/settings/breakpoint";
+
 .Faq {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,7 @@
     margin-inline: var(--spacing-page);
     margin-block: var(--base-size-160) var(--base-size-144);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         margin-block: var(--base-size-128) var(--base-size-112);
     }
 }
@@ -14,7 +16,7 @@
 .Faq-text.Typography--textCenter {
     margin-block-start: var(--base-size-32);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         margin-block-start: var(--base-size-20);
     }
 }
@@ -24,7 +26,7 @@
 
     margin-block-start: var(--base-size-56);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         inline-size: 100%;
 
         margin-block-start: var(--base-size-64);
@@ -34,7 +36,7 @@
 .Faq-link.Link--primary {
     margin-block-start: var(--base-size-56);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         margin-block-start: var(--base-size-36);
     }
 }

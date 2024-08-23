@@ -1,4 +1,5 @@
 @import "@/styles/tools";
+@import "@/styles/settings/breakpoint";
 
 .Link {
     @include centerContent;
@@ -78,7 +79,7 @@
         inline-size: var(--base-size-112);
         block-size: var(--base-size-48);
 
-        @media screen and (max-width: 48rem) {
+        @media screen and (max-width: $breakpoint-md) {
             inline-size: var(--base-size-96);
             block-size: var(--base-size-40);
         }
@@ -87,12 +88,12 @@
         inline-size: var(--base-size-160);
         block-size: var(--base-size-48);
 
-        @media screen and (max-width: 48rem) {
+        @media screen and (max-width: $breakpoint-md) {
             inline-size: var(--base-size-144);
             block-size: var(--base-size-44);
         }
 
-        @media screen and (max-width: 36rem) {
+        @media screen and (max-width: $breakpoint-sm) {
             inline-size: var(--base-size-128);
             block-size: var(--base-size-40);
         }

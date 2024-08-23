@@ -1,3 +1,5 @@
+@import "@/styles/settings/breakpoint";
+
 .Button {
     font-size: var(--size-xs);
     font-weight: 500;
@@ -41,12 +43,12 @@
         inline-size: var(--base-size-128);
         block-size: var(--base-size-48);
 
-        @media screen and (max-width: 48rem) {
+        @media screen and (max-width: $breakpoint-md) {
             inline-size: var(--base-size-112);
             block-size: var(--base-size-44);
         }
 
-        @media screen and (max-width: 36rem) {
+        @media screen and (max-width: $breakpoint-sm) {
             inline-size: initial;
             block-size: var(--base-size-40);
         }
@@ -55,12 +57,12 @@
         inline-size: var(--base-size-240);
         block-size: var(--base-size-48);
 
-        @media screen and (max-inline-size: 48rem) {
+        @media screen and (max-width: $breakpoint-md) {
             inline-size: var(--base-size-224);
             block-size: var(--base-size-44);
         }
 
-        @media screen and (max-inline-size: 36rem) {
+        @media screen and (max-width: $breakpoint-sm) {
             inline-size: var(--base-size-208);
             block-size: var(--base-size-40);
         }

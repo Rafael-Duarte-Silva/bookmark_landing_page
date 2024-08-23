@@ -1,3 +1,5 @@
+@import "@/styles/settings/breakpoint";
+
 .DownloadExtension {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,7 @@
     margin-inline: var(--spacing-page);
     margin-block-start: var(--base-size-96);
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         margin-block-start: var(--base-size-64);
     }
 }
@@ -14,7 +16,7 @@
 .DownloadExtension-text.Typography--textCenter {
     margin-block-start: var(--base-size-36);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         margin-block-start: var(--base-size-20);
     }
 }
@@ -26,14 +28,14 @@
 
     margin-block-start: var(--base-size-96);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         flex-direction: column;
         row-gap: var(--base-size-64);
 
         margin-block-start: var(--base-size-80);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         row-gap: var(--base-size-96);
     }
 }
@@ -49,7 +51,7 @@
         margin-block-start: var(--base-size-80);
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         flex: 0 0 auto;
 
         &:nth-child(2) {

@@ -1,4 +1,5 @@
 @import "@/styles/tools";
+@import "@/styles/settings/breakpoint";
 
 .Header {
     padding-inline: var(--spacing-page);
@@ -15,16 +16,16 @@
 .Header-logo {
     @include image(var(--base-size-144));
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         inline-size: var(--base-size-128);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: var(--base-size-144);
     }
 
     &.is-Header-logo-invisible {
-        @media screen and (max-width: 36rem) {
+        @media screen and (max-width: $breakpoint-sm) {
             visibility: hidden;
         }
     }
@@ -35,11 +36,11 @@
     align-items: center;
     column-gap: var(--base-size-48);
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: $breakpoint-md) {
         column-gap: var(--base-size-24);
     }
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         flex-direction: column;
 
         margin-block-start: var(--base-size-44);
@@ -47,7 +48,7 @@
 }
 
 .Header-item {
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: 100%;
 
         text-align: center;
@@ -60,14 +61,14 @@
 }
 
 .Header-link.Link--fourth {
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--base-size-24);
         color: var(--color-zero);
     }
 }
 
 .Header-linkLogin.Link--second {
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         inline-size: initial;
         block-size: var(--base-size-44);
 
@@ -85,7 +86,7 @@
 }
 
 .Header-backgroundMobile {
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         z-index: 1;
 
         position: fixed;
@@ -113,7 +114,7 @@
 .Header-containerMobile-header {
     display: none;
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -123,7 +124,7 @@
 .Header-containerMobile-footer {
     display: none;
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -134,7 +135,7 @@
 .Header-buttonHamburger {
     display: none;
 
-    @media screen and (max-width: 36rem) {
+    @media screen and (max-width: $breakpoint-sm) {
         display: block;
     }
 }
