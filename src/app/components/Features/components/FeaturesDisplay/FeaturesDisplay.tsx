@@ -1,8 +1,8 @@
 import "./FeaturesDisplay.scss";
 
-import { Link } from "@/components/UI/Link";
-import { Title } from "@/components/UI/Title";
-import { Typography } from "@/components/UI/Typography";
+import { Button } from "@/components/ui/Button";
+import { Title } from "@/components/ui/Title";
+import { Typography } from "@/components/ui/Typography";
 
 import { FeaturesList } from "../../types/FeaturesList";
 
@@ -24,17 +24,15 @@ export const FeaturesDisplay = ({ feature }: FeaturesDisplayProps) => {
                 >
                     {feature.title}
                 </Title>
-                <Typography className="Features-ContainerText-text">
-                    {feature.text}
-                </Typography>
-                <Link
+                <Typography className="Features-ContainerText-text">{feature.text}</Typography>
+                <Button
+                    asChild
                     className="Features-link"
-                    href=""
                     size="sm"
                     variant="primary"
                 >
-                    More Info
-                </Link>
+                    <a href="#">More Info</a>
+                </Button>
             </div>
         </div>
     );

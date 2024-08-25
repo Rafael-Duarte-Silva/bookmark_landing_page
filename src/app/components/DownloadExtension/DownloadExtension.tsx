@@ -1,8 +1,8 @@
 import "./DownloadExtension.scss";
 
 import { BrowserCard } from "@/components/BrowserCard";
-import { Title } from "@/components/UI/Title";
-import { Typography } from "@/components/UI/Typography";
+import { Title } from "@/components/ui/Title";
+import { Typography } from "@/components/ui/Typography";
 
 import { downloadExtensionList } from "./constants/downloadExtensionList";
 
@@ -20,8 +20,8 @@ export const DownloadExtension = () => {
                 size="lg"
                 variant="textCenter"
             >
-                We’ve got more browsers in the pipeline. Please do let us know
-                if you’ve got a favourite you’d like us to prioritize.
+                We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us
+                to prioritize.
             </Typography>
 
             <ul className="DownloadExtension-list">

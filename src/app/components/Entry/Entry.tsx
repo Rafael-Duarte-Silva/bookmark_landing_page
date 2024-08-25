@@ -1,9 +1,9 @@
 import "./Entry.scss";
 
-import { IllustrationHero } from "./components/Icons/IllustrationHero";
-import { Link } from "@/components/UI/Link";
-import { Title } from "@/components/UI/Title";
-import { Typography } from "@/components/UI/Typography";
+import { IllustrationHero } from "./components/icons/IllustrationHero";
+import { Button } from "@/components/ui/Button";
+import { Title } from "@/components/ui/Title";
+import { Typography } from "@/components/ui/Typography";
 
 export const Entry = () => {
     return (
@@ -17,28 +17,27 @@ export const Entry = () => {
                     A Simple Bookmark Manager
                 </Title>
                 <Typography className="Entry-text">
-                    A clean and simple interface to organize your favourite
-                    websites. Open a new browser tab and see your sites load
-                    instantly. Try it for free.
+                    A clean and simple interface to organize your favourite websites. Open a new browser tab and see
+                    your sites load instantly. Try it for free.
                 </Typography>
                 <ul className="Entry-list">
                     <li>
-                        <Link
-                            href=""
-                            size="md"
+                        <Button
+                            asChild
+                            size="lg"
                             variant="primary"
                         >
-                            Get it on Chrome
-                        </Link>
+                            <a href="#">Get it on Chrome</a>
+                        </Button>
                     </li>
                     <li>
-                        <Link
-                            href=""
-                            size="md"
+                        <Button
+                            asChild
+                            size="lg"
                             variant="third"
                         >
-                            Get it on Firefox
-                        </Link>
+                            <a href="#">Get it on Firefox</a>
+                        </Button>
                     </li>
                 </ul>
             </div>

@@ -14,7 +14,7 @@
 
         padding-block: var(--base-size-16);
 
-        border-block-start: var(--borderWidth-md) solid hsl(240, 19%, 90%);
+        border-block-start: var(--borderWidth-md) solid var(--color-zero-light);
 
         &:nth-child(2) {
             margin-inline-start: 0;
@@ -51,7 +51,7 @@
 
     font-size: var(--size-xs);
     font-weight: 500;
-    color: hsl(228, 3%, 36%);
+    color: var(--color-third-dark);
 
     &:hover {
         color: var(--color-second);

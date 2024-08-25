@@ -1,8 +1,12 @@
 :root {
-    --color-zero: hsl(0, 0%, 100%);
-    --color-primary: hsl(231, 69%, 60%);
-    --color-second: hsl(0, 94%, 66%);
+    --color-zero: #fff;
+    --color-zero-light: #e1e1ea;
+    --color-primary: #5368df;
+    --color-second: #fa5757;
 
-    --color-third: hsl(229, 8%, 60%);
-    --color-fourth: hsl(229, 31%, 21%);
+    --color-third: #9194a1;
+    --color-third-light: #4c526bd9;
+    --color-third-dark: #595a5f;
+    --color-fourth: #252b46;
+    --color-fourth-light: #252b46e6;
 }

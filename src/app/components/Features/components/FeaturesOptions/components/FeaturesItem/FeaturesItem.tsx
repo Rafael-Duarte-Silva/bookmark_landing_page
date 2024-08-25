@@ -9,12 +9,7 @@ type FeaturesItemProps = {
     onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export const FeaturesItem = ({
-    id = "",
-    value = 0,
-    label = "",
-    onChange,
-}: FeaturesItemProps) => {
+export const FeaturesItem = ({ id = "", value = 0, label = "", onChange }: FeaturesItemProps) => {
     return (
         <li className="Features-item">
             {value === 0 ? (

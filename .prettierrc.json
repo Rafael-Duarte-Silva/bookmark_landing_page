@@ -1,18 +1,15 @@
 {
-    "plugins": [
-        "@trivago/prettier-plugin-sort-imports",
-        "prettier-plugin-css-order",
-        "prettier-plugin-tailwindcss"
-    ],
+    "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-css-order", "prettier-plugin-tailwindcss"],
     "endOfLine": "crlf",
     "semi": true,
     "singleAttributePerLine": true,
+    "printWidth": 120,
     "tabWidth": 4,
     "importOrder": [
         "\\.(css|scss)$",
         "^(react\\/(.*)$)|^(react$)",
         "<THIRD_PARTY_MODULES>",
-        "^@\\/(components)|\\.\\/(components|Icons|UI)(.*)$",
+        "^@\\/(components)|\\.\\/(components|icons|ui)(.*)$",
         "^@\\/(constants)|\\.\\/(constants)(.*)$",
         "^@\\/(hooks)|\\.\\/(hooks)(.*)$",
         "^@\\/(types)|\\.\\/(types)(.*)$",

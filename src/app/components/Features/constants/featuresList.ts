@@ -1,6 +1,6 @@
-import { IllustrationFeaturesTab1 } from "../components/Icons/IllustrationFeaturesTab1";
-import { IllustrationFeaturesTab2 } from "../components/Icons/IllustrationFeaturesTab2";
-import { IllustrationFeaturesTab3 } from "../components/Icons/IllustrationFeaturesTab3";
+import { IllustrationFeaturesTab1 } from "../components/icons/IllustrationFeaturesTab1";
+import { IllustrationFeaturesTab2 } from "../components/icons/IllustrationFeaturesTab2";
+import { IllustrationFeaturesTab3 } from "../components/icons/IllustrationFeaturesTab3";
 
 import { FeaturesList } from "../types/FeaturesList";
 

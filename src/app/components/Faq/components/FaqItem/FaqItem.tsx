@@ -1,7 +1,7 @@
 import "./FaqItem.scss";
 
-import { IconArrow } from "../Icons/IconArrow";
-import { Typography } from "@/components/UI/Typography";
+import { IconArrow } from "../icons/IconArrow";
+import { Typography } from "@/components/ui/Typography";
 
 type FaqItemProps = {
     summary: string;

@@ -55,19 +55,20 @@
 
         padding-block: var(--base-size-24);
 
-        border-block-start: var(--borderWidth-md) solid
-            hsla(229, 17%, 36%, 0.85);
+        border-block-start: var(--borderWidth-md) solid var(--color-third-light);
     }
 }
 
-.Header-link.Link--fourth {
+.Header-link.Link--primary {
     @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--base-size-24);
         color: var(--color-zero);
     }
 }
 
-.Header-linkLogin.Link--second {
+.Header-linkLogin.Button--second {
+    text-transform: uppercase;
+
     @media screen and (max-width: $breakpoint-sm) {
         inline-size: initial;
         block-size: var(--base-size-44);
@@ -100,10 +101,9 @@
         inline-size: 100vw;
         block-size: 100dvh;
 
-        padding-inline: var(--base-size-36);
-        padding-block: var(--base-size-40) var(--base-size-48);
+        padding: var(--base-size-40) var(--base-size-36) var(--base-size-48) var(--base-size-36);
 
-        background-color: hsla(229, 31%, 21%, 0.9);
+        background-color: var(--color-fourth-light);
 
         &.is-Header-backgroundMobile-hidden {
             display: none;

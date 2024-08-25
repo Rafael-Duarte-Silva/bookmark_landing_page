@@ -27,7 +27,7 @@
 .Features-separator {
     margin-block-start: var(--base-size-32);
 
-    border: var(--borderWidth-sm) solid hsl(240, 19%, 90%);
+    border: var(--borderWidth-sm) solid var(--color-zero-light);
 
     @media screen and (max-width: $breakpoint-md) {
         margin-block-start: 0;

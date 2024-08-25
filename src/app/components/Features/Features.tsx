@@ -4,8 +4,8 @@ import "./Features.scss";
 
 import { FeaturesDisplay } from "./components/FeaturesDisplay";
 import { FeaturesOptions } from "./components/FeaturesOptions";
-import { Title } from "@/components/UI/Title";
-import { Typography } from "@/components/UI/Typography";
+import { Title } from "@/components/ui/Title";
+import { Typography } from "@/components/ui/Typography";
 
 import { useFeaturesDisplay } from "./hooks/useFeaturesDisplay";
 
@@ -26,9 +26,8 @@ export const Features = () => {
                     size="md"
                     variant="textCenter"
                 >
-                    Our aim is to make it quick and easy for you to access your
-                    favourite websites. Your bookmarks sync between your devices
-                    so you can access them on the go.
+                    Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
+                    between your devices so you can access them on the go.
                 </Typography>
 
                 <FeaturesOptions onChange={handleChangeFeatureValue} />

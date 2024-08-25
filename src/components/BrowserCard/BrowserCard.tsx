@@ -2,8 +2,8 @@ import "./BrowserCard.scss";
 
 import { ElementType } from "react";
 
-import { Button } from "../UI/Button";
-import { BgDots } from "./components/Icons/BgDots";
+import { Button } from "../ui/Button";
+import { BgDots } from "./components/icons/BgDots";
 
 type BrowserCardProps = {
     logo: ElementType;
@@ -11,11 +11,7 @@ type BrowserCardProps = {
     text: string;
 };
 
-export const BrowserCard = ({
-    logo: Logo,
-    title,
-    text = "",
-}: BrowserCardProps) => {
+export const BrowserCard = ({ logo: Logo, title = <span>Default title</span>, text = "" }: BrowserCardProps) => {
     return (
         <article className="BrowserCard">
             <Logo className="BrowserCard-logo" />
@@ -24,7 +20,7 @@ export const BrowserCard = ({
             <BgDots className="BrowserCard-dots" />
             <Button
                 className="BrowserCard-button"
-                size="md"
+                size="xl"
                 variant="primary"
                 type="button"
             >

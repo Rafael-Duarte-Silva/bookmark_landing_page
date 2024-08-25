@@ -1,8 +1,8 @@
 import { ElementType } from "react";
 
-import { LogoChrome } from "../components/Icons/LogoChrome";
-import { LogoFirefox } from "../components/Icons/LogoFirefox";
-import { LogoOpera } from "../components/Icons/LogoOpera";
+import { LogoChrome } from "../components/icons/LogoChrome";
+import { LogoFirefox } from "../components/icons/LogoFirefox";
+import { LogoOpera } from "../components/icons/LogoOpera";
 
 type DownloadExtensionList = {
     logo: ElementType;

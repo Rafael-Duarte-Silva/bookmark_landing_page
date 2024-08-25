@@ -1,8 +1,4 @@
-export const IllustrationFeaturesTab1 = ({
-    className,
-}: {
-    className?: string;
-}) => {
+export const IllustrationFeaturesTab1 = ({ className }: { className?: string }) => {
     return (
         <svg
             className={className}

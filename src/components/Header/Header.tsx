@@ -2,18 +2,24 @@
 
 import "./Header.scss";
 
-import { IconFacebook } from "../Icons/IconFacebook";
-import { IconTwitter } from "../Icons/IconTwitter";
-import { LogoBookmarkDark } from "../Icons/LogoBookmarkDark";
-import { LogoBookmarkLight } from "../Icons/LogoBookmarkLight";
-import { Link } from "../UI/Link";
-import { IconClose } from "./components/Icons/IconClose";
-import { IconHamburger } from "./components/Icons/IconHamburger";
+import { useRef } from "react";
+
+import { IconFacebook } from "../icons/IconFacebook";
+import { IconTwitter } from "../icons/IconTwitter";
+import { LogoBookmarkDark } from "../icons/LogoBookmarkDark";
+import { LogoBookmarkLight } from "../icons/LogoBookmarkLight";
+import { Button } from "../ui/Button";
+import { Link } from "../ui/Link";
+import { IconClose } from "./components/icons/IconClose";
+import { IconHamburger } from "./components/icons/IconHamburger";
+
+import { linkList } from "@/constants/linkList";
 
 import { useHeader } from "./hooks/useHeader";
 
 export const Header = () => {
-    const { isOpenHamburger, handleOpenHamburger } = useHeader();
+    const popupRef = useRef<HTMLDivElement>(null);
+    const { isOpenHamburger, handleOpenHamburger } = useHeader(popupRef);
 
     return (
         <header className="Header">
@@ -24,26 +30,33 @@ export const Header = () => {
                 <a
                     aria-label="Back to home page"
                     className={`Header-logo ${isOpenHamburger ? "is-Header-logo-invisible" : ""}`}
-                    href=""
+                    href="#"
                 >
                     <LogoBookmarkDark />
                 </a>
 
                 <div
+                    aria-modal="true"
+                    aria-label="Modal site navigation"
                     className={`Header-backgroundMobile ${isOpenHamburger ? "" : "is-Header-backgroundMobile-hidden"}`}
+                    id="dialog"
+                    ref={popupRef}
+                    role="dialog"
                 >
                     <div>
                         <div className="Header-containerMobile-header">
                             <a
                                 aria-label="Back to home page"
-                                href=""
+                                href="#"
                             >
                                 <LogoBookmarkLight />
                             </a>
 
                             <button
+                                aria-controls="dialog"
                                 aria-expanded={isOpenHamburger}
-                                aria-label="Close mobile menu"
+                                aria-haspopup="dialog"
+                                aria-label="Close mobile dialog"
                                 onClick={handleOpenHamburger}
                                 type="button"
                             >
@@ -52,42 +65,29 @@ export const Header = () => {
                         </div>
 
                         <ul className="Header-list">
-                            <li className="Header-item">
-                                <Link
-                                    className="Header-link"
-                                    variant="fourth"
-                                    href=""
+                            {linkList.map((link, index) => (
+                                <li
+                                    className="Header-item"
+                                    key={index}
                                 >
-                                    features
-                                </Link>
-                            </li>
+                                    <Link
+                                        className="Header-link"
+                                        variant="primary"
+                                        href="#"
+                                    >
+                                        {link.text}
+                                    </Link>
+                                </li>
+                            ))}
                             <li className="Header-item">
-                                <Link
-                                    className="Header-link"
-                                    variant="fourth"
-                                    href=""
-                                >
-                                    pricing
-                                </Link>
-                            </li>
-                            <li className="Header-item">
-                                <Link
-                                    className="Header-link"
-                                    variant="fourth"
-                                    href=""
-                                >
-                                    contact
-                                </Link>
-                            </li>
-                            <li className="Header-item">
-                                <Link
+                                <Button
+                                    asChild
                                     className="Header-linkLogin"
                                     size="sm"
                                     variant="second"
-                                    href=""
                                 >
-                                    login
-                                </Link>
+                                    <a href="#">login</a>
+                                </Button>
                             </li>
                         </ul>
                     </div>
@@ -114,8 +114,10 @@ export const Header = () => {
                 </div>
 
                 <button
+                    aria-controls="dialog"
                     aria-expanded={isOpenHamburger}
-                    aria-label="Open mobile menu"
+                    aria-haspopup="dialog"
+                    aria-label="Open mobile dialog"
                     className={`Header-buttonHamburger ${isOpenHamburger ? "is-invisible" : ""}`}
                     onClick={handleOpenHamburger}
                     type="button"

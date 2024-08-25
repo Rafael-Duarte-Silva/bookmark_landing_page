@@ -1,11 +1,13 @@
 //Components
 import "./Footer.scss";
 
-import { IconFacebook } from "../Icons/IconFacebook";
-import { IconTwitter } from "../Icons/IconTwitter";
-import { LogoBookmarkLight } from "../Icons/LogoBookmarkLight";
-import { Link } from "../UI/Link";
+import { IconFacebook } from "../icons/IconFacebook";
+import { IconTwitter } from "../icons/IconTwitter";
+import { LogoBookmarkLight } from "../icons/LogoBookmarkLight";
+import { Link } from "../ui/Link";
 import { FooterForm } from "./components/FooterForm";
+
+import { linkList } from "@/constants/linkList";
 
 export const Footer = () => {
     return (
@@ -13,9 +15,7 @@ export const Footer = () => {
             <div className="Footer-contactUs">
                 <span className="Footer-text">35,000 + already joined</span>
 
-                <span className="Footer-title">
-                    Stay up-to-date with what we’re doing
-                </span>
+                <span className="Footer-title">Stay up-to-date with what we’re doing</span>
 
                 <FooterForm />
             </div>
@@ -23,36 +23,22 @@ export const Footer = () => {
                 <div className="Footer-flexContent">
                     <a
                         aria-label="Back to home page"
-                        href=""
+                        href="#"
                     >
                         <LogoBookmarkLight className="Footer-logo" />
                     </a>
 
                     <ul className="Footer-listLink">
-                        <li>
-                            <Link
-                                href=""
-                                variant="fifth"
-                            >
-                                Features
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href=""
-                                variant="fifth"
-                            >
-                                Pricing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href=""
-                                variant="fifth"
-                            >
-                                Contact
-                            </Link>
-                        </li>
+                        {linkList.map((link, index) => (
+                            <li key={index}>
+                                <Link
+                                    href="#"
+                                    variant="second"
+                                >
+                                    {link.text}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 

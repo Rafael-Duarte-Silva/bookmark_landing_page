@@ -7,7 +7,7 @@
     color: var(--color-third);
 
     &--primary {
-        color: hsl(228, 3%, 36%);
+        color: var(--color-third-dark);
     }
     &--textCenter {
         text-align: center;

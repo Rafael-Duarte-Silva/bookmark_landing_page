@@ -1,13 +1,13 @@
-@import "@/styles/tools";
 @import "@/styles/settings/breakpoint";
 
 .Link {
-    @include centerContent;
-
     font-size: var(--size-xs);
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
+    text-transform: uppercase;
     color: var(--color-zero);
+
+    background-color: transparent;
 
     border-radius: var(--borderRadius-md);
 
@@ -18,84 +18,17 @@
     transition-duration: 0.2s;
 
     &--primary {
-        background-color: var(--color-primary);
+        color: var(--color-fourth);
 
         &:hover {
-            color: var(--color-primary);
-
-            background-color: var(--color-zero);
-
-            border: var(--borderWidth-md) solid var(--color-primary);
+            color: var(--color-second);
         }
     }
     &--second {
-        text-transform: uppercase;
-
-        background-color: var(--color-second);
-
-        &:hover {
-            color: var(--color-second);
-
-            background-color: var(--color-zero);
-
-            border: var(--borderWidth-md) solid var(--color-second);
-        }
-    }
-    &--third {
-        color: var(--color-fourth);
-
-        background-color: transparent;
-
-        &:hover {
-            background-color: var(--color-zero);
-
-            border: var(--borderWidth-md) solid var(--color-fourth);
-        }
-    }
-    &--fourth {
-        font-weight: 400;
-        text-transform: uppercase;
-        color: var(--color-fourth);
-
-        background-color: transparent;
-
-        &:hover {
-            color: var(--color-second);
-        }
-    }
-    &--fifth {
-        font-weight: 400;
-        text-transform: uppercase;
         color: var(--color-zero);
 
-        background-color: transparent;
-
         &:hover {
             color: var(--color-second);
-        }
-    }
-
-    &--sm {
-        inline-size: var(--base-size-112);
-        block-size: var(--base-size-48);
-
-        @media screen and (max-width: $breakpoint-md) {
-            inline-size: var(--base-size-96);
-            block-size: var(--base-size-40);
-        }
-    }
-    &--md {
-        inline-size: var(--base-size-160);
-        block-size: var(--base-size-48);
-
-        @media screen and (max-width: $breakpoint-md) {
-            inline-size: var(--base-size-144);
-            block-size: var(--base-size-44);
-        }
-
-        @media screen and (max-width: $breakpoint-sm) {
-            inline-size: var(--base-size-128);
-            block-size: var(--base-size-40);
         }
     }
 }

@@ -1,9 +1,9 @@
 import "./Faq.scss";
 
 import { FaqItem } from "./components/FaqItem";
-import { Link } from "@/components/UI/Link";
-import { Title } from "@/components/UI/Title";
-import { Typography } from "@/components/UI/Typography";
+import { Button } from "@/components/ui/Button";
+import { Title } from "@/components/ui/Title";
+import { Typography } from "@/components/ui/Typography";
 
 import { faqList } from "./constants/faqList";
 
@@ -21,8 +21,8 @@ export const Faq = () => {
                 size="sm"
                 variant="textCenter"
             >
-                Here are some of our FAQs. If you have any other questions you’d
-                like answered please feel free to email us.
+                Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email
+                us.
             </Typography>
 
             <ul className="Faq-list">
@@ -35,14 +35,14 @@ export const Faq = () => {
                 ))}
             </ul>
 
-            <Link
+            <Button
+                asChild
                 className="Faq-link"
-                href=""
                 size="sm"
                 variant="primary"
             >
-                More Info
-            </Link>
+                <a href="#">More Info</a>
+            </Button>
         </section>
     );
 };

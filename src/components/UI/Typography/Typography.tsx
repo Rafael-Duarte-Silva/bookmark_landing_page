@@ -18,19 +18,11 @@ const typography = cva("Typography", {
     },
 });
 
-interface TypographyProps
-    extends HTMLAttributes<HTMLParagraphElement>,
-        VariantProps<typeof typography> {
+interface TypographyProps extends HTMLAttributes<HTMLParagraphElement>, VariantProps<typeof typography> {
     children?: ReactNode;
 }
 
-export const Typography = ({
-    variant,
-    size,
-    className = "",
-    children,
-    ...props
-}: TypographyProps) => {
+export const Typography = ({ variant, size, className = "", children, ...props }: TypographyProps) => {
     return (
         <p
             className={typography({ variant, size, className })}

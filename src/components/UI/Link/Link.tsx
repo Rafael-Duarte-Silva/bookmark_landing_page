@@ -9,33 +9,18 @@ const link = cva("Link", {
         variant: {
             primary: "Link--primary",
             second: "Link--second",
-            third: "Link--third",
-            fourth: "Link--fourth",
-            fifth: "Link--fifth",
-        },
-        size: {
-            sm: "Link--sm",
-            md: "Link--md",
         },
     },
 });
 
-interface LinkProps
-    extends AnchorHTMLAttributes<HTMLAnchorElement>,
-        VariantProps<typeof link> {
+interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement>, VariantProps<typeof link> {
     children?: ReactNode;
 }
 
-export const Link = ({
-    variant,
-    size,
-    className = "",
-    children,
-    ...props
-}: LinkProps) => {
+export const Link = ({ variant, className = "", children, ...props }: LinkProps) => {
     return (
         <a
-            className={link({ variant, size, className })}
+            className={link({ variant, className })}
             {...props}
         >
             {children}

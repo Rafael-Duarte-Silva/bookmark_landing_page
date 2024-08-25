@@ -5,8 +5,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-inline: var(--spacing-page);
-    margin-block: var(--base-size-160) var(--base-size-144);
+    margin: var(--base-size-160) var(--spacing-page) var(--base-size-144) var(--spacing-page);
 
     @media screen and (max-width: $breakpoint-md) {
         margin-block: var(--base-size-128) var(--base-size-112);
@@ -33,7 +32,7 @@
     }
 }
 
-.Faq-link.Link--primary {
+.Faq-link.Button--primary {
     margin-block-start: var(--base-size-56);
 
     @media screen and (max-width: $breakpoint-md) {

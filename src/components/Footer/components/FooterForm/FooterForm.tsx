@@ -2,8 +2,8 @@
 
 import "./FooterForm.scss";
 
-import { IconError } from "./components/Icons/IconError";
-import { Button } from "@/components/UI/Button/Button";
+import { IconError } from "./components/icons/IconError";
+import { Button } from "@/components/ui/Button/Button";
 
 import { useFooterForm } from "./hooks/useFooterForm";
 
@@ -15,9 +15,7 @@ export const FooterForm = () => {
             className="Footer-form"
             onSubmit={handleSubmit(handleContactUs)}
         >
-            <label
-                className={`Footer-label ${errors.email?.message ? "is-Footer-label-invalid" : ""}`}
-            >
+            <label className={`Footer-label ${errors.email?.message ? "is-Footer-label-invalid" : ""}`}>
                 <input
                     autoComplete="email"
                     className="Footer-input"
@@ -28,14 +26,12 @@ export const FooterForm = () => {
                 {errors.email?.message && (
                     <>
                         <IconError className="Footer-iconError" />
-                        <strong className="Footer-errorMessage">
-                            {errors.email?.message}
-                        </strong>
+                        <strong className="Footer-errorMessage">{errors.email?.message}</strong>
                     </>
                 )}
             </label>
             <Button
-                size="sm"
+                size="md"
                 variant="second"
                 type="submit"
             >

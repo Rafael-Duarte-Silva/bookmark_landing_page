@@ -5,10 +5,10 @@
 
     padding-block: var(--base-size-28);
 
-    border-block-end: var(--borderWidth-sm) solid hsl(240, 19%, 90%);
+    border-block-end: var(--borderWidth-sm) solid var(--color-zero-light);
 
     &:nth-child(1) {
-        border-block-start: var(--borderWidth-sm) solid hsl(240, 19%, 90%);
+        border-block-start: var(--borderWidth-sm) solid var(--color-zero-light);
     }
 
     @media screen and (max-width: $breakpoint-md) {
