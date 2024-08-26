@@ -1,6 +1,6 @@
 # Bookmark landing page
 
-Esse projeto é um desafio de: [frontendmentor](https://www.frontendmentor.io/)
+Este projeto é um desafio de: [frontendmentor](https://www.frontendmentor.io/)
 
 ## Technologies
 
