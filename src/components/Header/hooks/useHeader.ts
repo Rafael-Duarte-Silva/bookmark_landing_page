@@ -12,7 +12,7 @@ export const useHeader = (popupRef: RefObject<HTMLElement | null>) => {
             const focusableElements: NodeListOf<HTMLElement> = popupRef.current.querySelectorAll("a");
 
             const firstElement: HTMLElement = focusableElements[0];
-            const lastElement: HTMLElement = focusableElements[focus.length - 1];
+            const lastElement: HTMLElement = focusableElements[focusableElements.length - 1];
 
             const handleModalKeys = (e: KeyboardEvent) => {
                 if (e.key === "Tab") {
